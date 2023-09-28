@@ -15,10 +15,10 @@
 <img src= 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/6f33cdef-3cbd-46a5-99a6-ff2cd0d6f0c9'>
 </p>
 
-Find your playlist and select "Copy link to playlist". Find and replace the target playlist link value of PLAYLIST_LINK variable at line 19 from the file "Extract track to CSV.py" and then run it.
+Find your playlist and select "Copy link to playlist". Run "Extract track to CSV.py" then paste the link into the box, then click submit.
 
 <p align="center"> 
-<img src = 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/15732a8b-d46c-4855-9e97-88e2a7871b7f'>
+<img src = 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/9734a4bc-2f72-4cda-9acf-d6fb12083fa1'>
 </p>
 
 A new CSV file will be created and filled with your favorite songs from your favorite playlist! Then, if you want to download all MP3 files of the songs. Run the file name "Download tracks from CSV.py".
@@ -31,7 +31,7 @@ All the tracks will be downloaded to the "Downloads" folder.
 
 ## 🔧 Build Information
  - Python3
- - Python Libraries: csv, os, re, pytube, spotipy, dotenv 
+ - External Libraries: pytube, spotipy, dotenv, tkinter 
 
 ## 🏆 Author
 - Le Ha My  - hmyle.it@gmail.com
