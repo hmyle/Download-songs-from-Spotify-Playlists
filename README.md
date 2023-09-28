@@ -2,7 +2,7 @@
 <p align="center">
   <img width="100" src="https://cdn-icons-png.flaticon.com/512/8560/8560446.png">
 </p>
-<p align="center">"Enjoy your song from anywhere."</p>
+<p align="center">Enjoy your song from anywhere.</p>
 
 
 ## 🎧 Description
