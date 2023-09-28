@@ -11,15 +11,15 @@ import tkinter as tk
 root = tk.Tk()
 root.title("Spotify Playlist Downloader")
 root.geometry("550x150") 
-root.configure(bg='#001524')
+root.configure(bg='#426e86')
 
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-title_label = tk.Label(root, text="Spotify Playlist Downloader", font=("Helvetica", 18,"bold"), bg='#001524', fg='#fff')
+title_label = tk.Label(root, text="Spotify Playlist Downloader", font=("Helvetica", 18,"bold"), bg='#426e86', fg='#fff')
 title_label.grid(row=0, columnspan=2, pady=10)
 
-link_label = tk.Label(root, text="Enter Playlist link", font=("Helvetica", 12,"bold"), bg='#001524', fg='#fff') 
+link_label = tk.Label(root, text="Enter Playlist link", font=("Helvetica", 12,"bold"), bg='#426e86', fg='#fff') 
 link_label.grid(row=1, column=0, sticky="w", padx=10, pady=10)
 
 link_entry = tk.Entry(root, width=40, font=("Helvetica", 12))
