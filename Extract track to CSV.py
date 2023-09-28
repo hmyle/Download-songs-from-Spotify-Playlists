@@ -1,27 +1,45 @@
-"""Get song titles and artists from Spotify playlist"""
-
 import csv
 import os
 import re
 
 import spotipy
-from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
+import tkinter as tk
 
-# load credentials from .env file
-load_dotenv()
+# GUI to input link
+
+root = tk.Tk()
+root.title("Spotify Playlist Downloader")
+root.geometry("550x150") 
+root.configure(bg='#001524')
+
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1)
+
+title_label = tk.Label(root, text="Spotify Playlist Downloader", font=("Helvetica", 18,"bold"), bg='#001524', fg='#fff')
+title_label.grid(row=0, columnspan=2, pady=10)
+
+link_label = tk.Label(root, text="Enter Playlist link", font=("Helvetica", 12,"bold"), bg='#001524', fg='#fff') 
+link_label.grid(row=1, column=0, sticky="w", padx=10, pady=10)
+
+link_entry = tk.Entry(root, width=40, font=("Helvetica", 12))
+link_entry.grid(row=1, column=1, sticky="e", padx=10, pady=10) 
+
+submit_btn = tk.Button(root, text="Submit", font=("Helvetica", 12), command=root.quit)
+submit_btn.grid(row=2, column=1, sticky="e", padx=10, pady=10)
+
+root.mainloop()
+
+PLAYLIST_LINK = link_entry.get()
+print(PLAYLIST_LINK)
+
 
 CLIENT_ID = '4c7a8ce7e4624bc9bbb9ad131cc20727'
 CLIENT_SECRET = '3313da573b164934bee40fa0678232f5'
 OUTPUT_FILE_NAME = "track_info.csv"
 
-# change for your target playlist
-PLAYLIST_LINK = "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF?si=6bdee7571e674f4f"
-
 # authenticate
-client_credentials_manager = SpotifyClientCredentials(
-    client_id=CLIENT_ID, client_secret=CLIENT_SECRET
-)
+client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 
 # create spotify session object
 session = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
