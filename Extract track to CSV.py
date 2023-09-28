@@ -16,16 +16,16 @@ root.configure(bg='#426e86')
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-title_label = tk.Label(root, text="Spotify Playlist Downloader", font=("Helvetica", 18,"bold"), bg='#426e86', fg='#fff')
+title_label = tk.Label(root, text="Spotify Playlist Downloader", font=("Helvetica", 18, "bold"), bg='#426e86', fg='#fff')
 title_label.grid(row=0, columnspan=2, pady=10)
 
-link_label = tk.Label(root, text="Enter Playlist link", font=("Helvetica", 12,"bold"), bg='#426e86', fg='#fff') 
+link_label = tk.Label(root, text="Enter Playlist link", font=("Helvetica", 12, "bold"), bg='#426e86', fg='#fff') 
 link_label.grid(row=1, column=0, sticky="w", padx=10, pady=10)
 
 link_entry = tk.Entry(root, width=40, font=("Helvetica", 12))
 link_entry.grid(row=1, column=1, sticky="e", padx=10, pady=10) 
 
-submit_btn = tk.Button(root, text="Submit", font=("Helvetica", 12), command=root.quit)
+submit_btn = tk.Button(root, text="Submit", font=("Helvetica", 12, "bold"), command=root.quit, bg = '#2f3131', fg = '#f8f1e5')
 submit_btn.grid(row=2, column=1, sticky="e", padx=10, pady=10)
 
 root.mainloop()
