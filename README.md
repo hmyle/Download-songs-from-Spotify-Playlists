@@ -31,7 +31,7 @@ All the tracks will be downloaded to the "Downloads" folder.
 
 ## 🔧 Build Information
  - Python3
- - Python Libraries: csv, os, re, pytube, spotipy, dotenv 
+ - External Libraries: pytube, spotipy, dotenv, tkinter 
 
 ## 🏆 Author
 - Le Ha My  - hmyle.it@gmail.com
