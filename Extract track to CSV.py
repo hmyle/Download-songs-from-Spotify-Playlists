@@ -3,6 +3,7 @@ import os
 import re
 
 import spotipy
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 import tkinter as tk
 
@@ -33,9 +34,10 @@ root.mainloop()
 PLAYLIST_LINK = link_entry.get()
 print(PLAYLIST_LINK)
 
+load_dotenv()
 
-CLIENT_ID = '4c7a8ce7e4624bc9bbb9ad131cc20727'
-CLIENT_SECRET = '3313da573b164934bee40fa0678232f5'
+CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID", "")
+CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET", "")
 OUTPUT_FILE_NAME = "track_info.csv"
 
 # authenticate

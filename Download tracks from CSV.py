@@ -1,5 +1,5 @@
 import csv, string
-from pytube import YouTube,Search
+from pytube import YouTube, Search
 
 # Load tracks from CSV
 tracks = []
