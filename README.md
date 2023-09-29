@@ -11,6 +11,30 @@
  - Downloaded tracks can be accessed offline.
 
 ## 🔍 How to Use
+### Before Using the Application
+
+Navigate to the [Spotify developer portal](https://developer.spotify.com/dashboard) and log in. Register a new app in the developer console to generate your API keys.
+
+<p align="center"> 
+<img src = 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/959c93dd-bbb4-445e-92e8-f6da0e081c55'>
+</p>
+
+In order to authenticate your Python application with the Spotify API you need to get your authentication keys -- `client_id` and `client_secret`.
+
+<p align="center"> 
+<img src = 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/70db74c6-e3c0-4ac0-b6de-af56db4ab0d6'>
+</p>
+
+Adjust the .env file with your `client_id` and `client_secret`.
+
+```
+# .env example
+SPOTIPY_CLIENT_ID = 'Replace with your client ID'
+SPOTIPY_CLIENT_SECRET = 'Replace with your client secret'
+```
+
+
+### How to Use the application
 <p align="center"> 
 <img src= 'https://github.com/hmyle/Download-songs-from-Spotify-Playlists/assets/116583355/6f33cdef-3cbd-46a5-99a6-ff2cd0d6f0c9'>
 </p>
